@@ -2,5 +2,8 @@
   "framework": null,
   "installCommand": "bun install",
   "buildCommand": "bun run build",
-  "outputDirectory": ".vercel/output"
+  "outputDirectory": "dist/client",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
